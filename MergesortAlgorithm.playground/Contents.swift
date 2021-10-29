@@ -1,14 +1,15 @@
 // Written by Tapash Mollick.
 
 import UIKit
+import Foundation
 
 func mergeSort(_ array: inout [Int]) -> [Int] {
     if array.count <= 1 { return array }
-    let middleIndex = Int(array.count / 2 )
-    let leftHalf = Array(array[0..<middleIndex])
-    let rightHalf = Array(array[middleIndex..<array.count])
+    let middleIndex = Int(Double(array.count / 2 ).rounded(.down))
+    var leftHalf = Array(array[0..<middleIndex])
+    var rightHalf = Array(array[middleIndex..<array.count])
     
-    return mergesortHelper(leftHalf, rightHalf)
+    return mergesortHelper(mergeSort(&leftHalf), mergeSort(&rightHalf))
 }
 
 func mergesortHelper(_ leftHalf: [Int], _ rightHalf: [Int]) -> [Int] {
@@ -44,3 +45,5 @@ func mergesortHelper(_ leftHalf: [Int], _ rightHalf: [Int]) -> [Int] {
 
 //Time Complexity = O(nlog(n))
 //Space Complexity = O(nlog(n))
+var array = [8, 5, 2, 9, 5, 6, 3]
+print(mergeSort(&array))
