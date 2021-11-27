@@ -20,6 +20,14 @@
 
 - [Copy on write](https://github.com/tapashm42/InterviewTopics/blob/master/Copyonwrite.playground/Contents.swift)
 
+- [Write a program to check whether two strings are anagram or not?](https://github.com/tapashm42/InterviewTopics/blob/master/Anagram.playground/Pages/AnagramCheck.xcplaygroundpage/Contents.swift)
+
+- [Find Group anagram from a sequence of string](https://github.com/tapashm42/InterviewTopics/blob/master/Anagram.playground/Pages/GroupAnagram.xcplaygroundpage/Contents.swift)
+
+- [Different ways of implementing stack](https://github.com/tapashm42/InterviewTopics/blob/master/StackImplementation.playground/Contents.swift)
+
+- [Custom way of implementing Map & CompactMap function.](https://github.com/tapashm42/InterviewTopics/blob/master/CustomHigherorderFunction.playground/Contents.swift)
+
 
 ## Author
 
